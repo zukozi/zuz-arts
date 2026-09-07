@@ -131,6 +131,40 @@
       .hero-card h1{ margin:0; font-size:2rem; color:var(--text); }
       .hero-card p{ margin:0.4rem 0 0; color:var(--muted); }
 
+      /* About section */
+      .about-section{
+        padding:2.5rem 1.5rem;
+        display:flex;
+        justify-content:center;
+      }
+      .about-card{
+        max-width:900px;
+        width:100%;
+        background: white;
+        border-radius:12px;
+        padding:1.75rem;
+        box-shadow: 0 8px 30px rgba(17,24,39,0.04);
+        border-left: 6px solid var(--purple-500);
+      }
+      .about-card h2{
+        margin:0 0 0.6rem 0;
+        font-size:1.5rem;
+        color:var(--text);
+      }
+      .about-text{
+        margin:0;
+        color:var(--muted);
+        line-height:1.6;
+        font-size:1rem;
+        min-height:80px;
+        padding:0.35rem 0.25rem;
+        outline: none;
+      }
+      .about-text[contenteditable]:focus{
+        box-shadow: 0 0 0 3px rgba(108,77,232,0.08);
+        border-radius:6px;
+      }
+
     </style>
   </head>
   <body>
@@ -164,6 +198,16 @@
           </div>
         </div>
       </section>
+
+      <!-- About me section -->
+      <section id="about" class="about-section">
+        <div class="about-card">
+          <h2>About me</h2>
+          <!-- Replace the text below with your paragraph. It's contenteditable in-browser for quick edits. -->
+          <p class="about-text" contenteditable="true">Write a short paragraph about yourself here. Tell visitors who you are, what you create, and what inspires your work. Replace this text with your own story.</p>
+        </div>
+      </section>
+
     </main>
   </body>
 </html>
